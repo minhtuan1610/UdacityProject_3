@@ -6,7 +6,9 @@ commands:
       id:
         type: string
     steps:
-      - run: echo << parameters.id >>
+      - run:
+        name: "this is ID of parameters"
+        command: echo << parameters.id >>
 
 jobs:
   my_job:
