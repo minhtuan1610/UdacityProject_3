@@ -12,8 +12,6 @@ jobs:
   my_job:
     docker:
       - image: circleci/node:13.8.0
-    environment:
-      CIRCLE_WORKFLOW_ID: "Maicua"
     steps:
       - print_pipeline_id:
           id: << pipeline.id >>
